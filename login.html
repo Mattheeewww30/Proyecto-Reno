@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Reno 2024</title>
+    <link rel="stylesheet" href="./styles_login.css">
+    <link rel="stylesheet" href="./root_css.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/2459953a8c.js" crossorigin="anonymous"></script>
+<body>
+    <div class="container">
+        <div class="form-box">
+            <a class="back" id="back" href="./index.html">Back</a>
+            <h1 id="title">Sign In</h1>
+            <form action="">
+                <div class="input-group">
+                    <div class="input-field" id="nameField">
+                        <i class="fa-solid fa-user" id="h"></i>
+                        <input type="text"  placeholder="Name" id="">
+                    </div>
+
+                    <div class="input-field">
+                        <i class="fa-solid fa-envelope"></i>
+                        <input type="email"  placeholder="Email" id="">
+                    </div>
+
+                    <div class="input-field">
+                        <i class="fa-solid fa-lock"></i>
+                        <input type="password"  placeholder="Password" id="">
+                    </div>
+                    <p class="disable" id="p_already_have_account">Already Have an Account? Click in Log In</p>
+                    <p class="disable" id="p_click_here">Forget Password? <a href="#">Click Here!</a></p>
+                </div>
+                <div class="btn-field">
+                    <button type="button" id="loginBtn">Sign In</button>
+                    <button type="button" class="disable" id="signinBtn">Log In</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+<script>
+
+let title = document.getElementById("title")
+let nameField = document.getElementById("nameField")
+let loginBtn = document.getElementById("loginBtn")
+let signinBtn = document.getElementById("signinBtn")
+
+
+signinBtn.onclick = function(){
+    nameField.style.maxHeight = "0"
+    title.innerHTML = "Log In"
+    loginBtn.classList.add("disable")
+    signinBtn.classList.remove("disable")
+}
+
+loginBtn.onclick = function(){
+    nameField.style.maxHeight = "60px"
+    title.innerHTML = "Sign In"
+    loginBtn.classList.remove("disable")
+    signinBtn.classList.add("disable")
+}
+
+</script>
+
+</html>
+
+
+
+
+
+
+
+
+

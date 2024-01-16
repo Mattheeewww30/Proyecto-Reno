@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Reno 2024</title>
+    <link rel="stylesheet" href="./styles_contact.css">
+    <link rel="stylesheet" href="./root_css.css">
+    <link rel="stylesheet" href="./styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/2459953a8c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- HEADER/NAV BAR -->
+    <header class="header">
+        <nav class="nav container">
+            <div class="nav__data">
+                <a href="./index.html" class="nav__logo">Reno</a>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-menu-line nav__toggle-menu"></i>
+                    <i class="ri-close-line nav__toggle-close"></i>
+                </div>
+            </div>
+
+            <!--=============== NAV MENU ===============-->
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <!--=============== ITEM 1 ===============-->
+                    <li class="dropdown__item">                      
+                        <div class="nav__link dropdown__button">
+                            <a href="#" class="nav__link">Company</a>
+                        </div>
+                    </li>
+
+                    <!--=============== ITEM 2 ===============-->
+                    <li class="dropdown__item">
+                        <div class="nav__link dropdown__button">
+                            <a href="./contact.html" class="nav__link">Contact Us</a>
+                        </div>
+                    </li>
+
+                    <!--=============== ITEM 3  ===============-->
+                    <li class="dropdown__item">                        
+                        <div class="nav__link dropdown__button">
+                            <a href="./about.html" class="nav__link">About Us</a>
+                        </div>
+                    </li>
+
+                    <!--=============== ITEM 4 ===============-->
+                    <li>
+                        <a href="login.html" class="nav__link">Log In</a>
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section class="section">
+        <div class="container-contact">
+            <div class="contact-info">
+                <div>
+                    <h2>Contact Info</h2>
+                    <ul class="info">
+                        <li>
+                            <span><i class="icons fa-solid fa-location-dot"></i></span>
+                            <span id="icons-info">
+                                Dirección <br>
+                                Dirección <br>
+                                Bogotá, Colombia<br>
+                                111107
+                            </span>
+                        </li>
+                        <li>
+                            <span><i class="icons fa-solid fa-envelope"></i></span>
+                            <span id="icons-info">proyectoreno2024@gmail.com</span>
+                        </li>
+                        <li>
+                            <span><i class="icons fa-solid fa-phone"></i></span>
+                            <span id="icons-info">Número</span>
+                        </li>
+                    </ul>
+                </div>
+            </div> 
+
+            <div class="form">
+                <h2>Send a Message</h2>
+                <div class="form-box">
+                    <div class="input-box w50">
+                        <input type="text" required>
+                        <span>FIrst Name</span>
+                    </div>
+                    <div class="input-box w50">
+                        <input type="text" required>
+                        <span>Last Name</span>
+                    </div>
+                    <div class="input-box w50">
+                        <input type="email" required>
+                        <span>Email Address</span>
+                    </div>
+                    <div class="input-box w50">
+                        <input type="text" required>
+                        <span>Mobile Number</span>
+                    </div>
+                    <div class="input-box w100">
+                        <textarea required></textarea>
+                        <span>Write you message here...</span>
+                    </div>
+                    <div class="input-box w100">
+                        <input type="submit" value="Send" id="send-button">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="group-1">
+            <div class="box">
+                <figure>
+                    <a href="#">
+                        <img src="" alt="RENO">
+                    </a>
+                </figure>
+            </div>
+            <div class="box">
+                <h2>About Us</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, ipsa?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, ipsa?</p>
+            </div>
+            <div class="box" id="box-follow-us">
+                <h2>Follow Us</h2>
+                <div class="social-network">
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-instagram"></a>
+                    <a href="#" class="fa-brands fa-x-twitter"></a>
+                    <a href="#" class="fa fa-youtube"></a>
+                </div>
+            </div>
+        </div>
+        <div class="group-2">
+            <small>&copy; 2023 <b>Proyecto Reno</b> - Todos los Derechos Reservados.</small>
+        </div>
+    </footer>
+    <script src="./main.js" defer></script>
+
+</body>
+</html>

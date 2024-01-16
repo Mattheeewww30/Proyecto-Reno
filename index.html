@@ -6,63 +6,219 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyecto Reno 2024</title>
     <link rel="stylesheet" href="./styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="./root_css.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+        <script src="https://kit.fontawesome.com/2459953a8c.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-    <header id="main-header">
-        <a id="logo-header" href="#">
-			<span class="site-name">Reno</span>
-		</a>
-        <nav>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Tutoriales</a></li>
-                <li><a href="#">Cursos</a></l>
-                <li><a href="#">Shop</a></li>
-            </ul>
-        </nav>
-    </header>
-    <div class="cuerpo">
-        <div class="intro">
-            <img src="aerogenerador.jpg" alt="imagen de nuestro aerogenerador">
-        </div>
-    </div>
-    <footer class="footer">
-            <div class="container">
-                <div class="row">
-                    <div class="footer-col">
-                        <h4>Proyecto</h4>
-                        <ul>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">Contact us</a></li>
-                            <li><a href="#">about us</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-col">
-                        <h4>Help</h4>
-                        <ul>
-                            <li><a href="#">FAQ</a></li>
-                            <li><a href="#">Order satus</a></li>
-                            <li><a href="#">payment options</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-col">
-                        <h4>Online shop</h4>
-                        <ul>
-                            <li><a href="#">Products</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-col">
-                        <h4>Follow us</h4>
-                        <div class="social-links">
-                            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
-                            <a href="#"><i class="fa-brands fa-twitter"></i></a> 
-                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                            <a href="#"><i class="fa-regular fa-envelope"></i></a>
-                        </div>
-                    </div>
+    <!-- HEADER/NAV BAR -->
+    <header class="header">
+        <nav class="nav container">
+            <div class="nav__data">
+                <a href="./index.html" class="nav__logo">Reno</a>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-menu-line nav__toggle-menu"></i>
+                    <i class="ri-close-line nav__toggle-close"></i>
                 </div>
             </div>
+
+            <!--=============== NAV MENU ===============-->
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <!--=============== ITEM 1 ===============-->
+                    <li class="dropdown__item">                      
+                        <div class="nav__link dropdown__button">
+                            <a href="#" class="nav__link">Company</a>
+                        </div>
+                    </li>
+
+                    <!--=============== ITEM 2 ===============-->
+                    <li class="dropdown__item">
+                        <div class="nav__link dropdown__button">
+                            <a href="./contact.html" class="nav__link">Contact Us</a>
+                        </div>
+                    </li>
+
+                    <!--=============== ITEM 3  ===============-->
+                    <li class="dropdown__item">                        
+                        <div class="nav__link dropdown__button">
+                            <a href="./about.html" class="nav__link">About Us</a>
+                        </div>
+                    </li>
+
+                    <!--=============== ITEM 4 ===============-->
+                    <li>
+                        <a href="login.html" class="nav__link">Log In</a>
+                    </li>
+
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- CUERPO -->
+    <div class="cuerpo">
+        <div class="foto">
+            <img src="aerogenerador.jpg" alt="imagen de nuestro aerogenerador">
+        </div>
+        <div class="caracteristicas">
+            <div class="item">
+                <img src="battery.png" class="imagen-caracteristicas"  alt="bateria ">
+                <figcaption>12,000 mAH</figcaption>
+            </div>
+            <div class="item">
+                <img src="viento.png" class="imagen-caracteristicas" alt="viento">
+                <figcaption>Min20W MaxW</figcaption> 
+            </div>
+            <div class="item">
+                <img src="temp.png" class="imagen-caracteristicas" alt="temperatura">
+                <figcaption>temperaturas entre °C</figcaption>
+            </div>
+        </div>
+        <div class="container-body" class="red-line" id="intro">
+            <p>Somos un proyecto la cual busca suministrar energía electríca, mediante 
+             un aerogenerador vertical, que no afecte el medio ambiente</p>
+            <br>
+            Misión
+            <br>
+            Proporcionar a las zonas rurales y urbanas, una solución sostenible y accesible para la generación de energía renovable en los hogares, del mundo para que adopten prácticas de energía limpia, reduciendo su dependencia de fuentes no renovables y contribuyendo activamente a la lucha contra el cambio climático. Creemos en un futuro sostenible y estamos comprometidos con la innovación continua y la mejora de nuestras tecnologías para maximizar el potencial de la energía eólica a nivel doméstico.
+            <br>
+            <br>
+            Visión
+            <br>
+            En 2024, Reno quiere ser reconocida nacionalmente como un proyecto revolucionario, que busca tener múltiples productos alrededor de Colombia, se espera haber hecho una contribución al medio ambiente con la energía eólica, se espera que para ese tiempo nuestro generador sea reconocido como un proyecto confiable y rentable para el usuario.
+            <br>
+            <br>
+            ¿Por qué somos diferentes?
+            <p>Nuestro proyecto se caracteriza por</p>
+        </div>
+        <div class="aplicaciones">
+            <h3>Aplicaciones</h3>
+            <div class="usos">
+                <br>
+                <p> Electrificación rural <br>
+                Viviendas y Edificios residenciales <br>
+                Conexión a internet</p>
+            </div>
+        </div>
+        <div class="funcion">
+            <h3>Cómo funciona el Reno</h3>
+            <div class="ft">
+                <br>
+                <p>1. La velocidad cinética del viento hace girar las aspas <br>
+                    2. Reno convierte la energia cinética en energía eléctrica <br>
+                    3. Se regula la energía para poder suministrarla a los dispositivos <br>
+                    4. Queda listo para el uso doméstico
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- PRODUCT -->
+    <div class="product">
+        <div class="container-img">
+            <img class="image-product" src="https://images.unsplash.com/photo-1560769629-975ec94e6a86?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80" alt="imagen-producto"/>
+        </div>
+        
+        <div class="container-info-product">
+            <h2>Aerogenerador Reno 1.1</h3>
+            <div class="container-description">
+                <div class="title-description">
+                    <h3>Descripción</h3>
+                </div>
+                <div class="text-description">
+                    <p>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing
+                        elit. Laboriosam iure provident atque voluptatibus
+                        reiciendis quae rerum, maxime placeat enim cupiditate
+                        voluptatum, temporibus quis iusto. Enim eum qui delectus
+                        deleniti similique? Lorem, ipsum dolor sit amet
+                        consectetur adipisicing elit. Sint autem magni earum est
+                        dolorem saepe perferendis repellat ipsam laudantium cum
+                        assumenda quidem quam, vero similique? Iusto officiis
+                        quod blanditiis iste?
+                    </p>
+                </div>
+            </div>
+
+            <div class="container-additional-information">
+                <div class="title-additional-information">
+                    <h3>Información adicional</h3>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <div class="text-additional-information hidden">
+                    <p>-----------</p>
+                </div>
+            </div>
+
+            <div class="container-reviews">
+                <div class="title-reviews">
+                    <h3>Reseñas</h3>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <div class="text-reviews hidden">
+                    <p>-----------</p>
+                </div>
+            </div>
+
+            <div class="container-price">
+                <h3>$95.00c/u</h3>
+            </div>
+            <div class="container-add-cart">
+                <div class="container-quantity">
+                    <input
+                        type="number"
+                        placeholder="1"
+                        value="1"
+                        min="1"
+                        class="input-quantity"
+                    />
+                    <div class="btn-increment-decrement">
+                        <i class="fa-solid fa-chevron-up" id="increment"></i>
+                        <i class="fa-solid fa-chevron-down" id="decrement"></i>
+                    </div>
+                </div>
+                <button class="buy-now">
+                    <a href="payment_page.html" class="buy-now-a">Comprar Ahora</a>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="group-1">
+            <div class="box">
+                <figure>
+                    <a href="#">
+                        <img src="img/logotipo-sleedw.svg" alt="RENO">
+                    </a>
+                </figure>
+            </div>
+            <div class="box">
+                <h2>About Us</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, ipsa?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, ipsa?</p>
+            </div>
+            <div class="box" id="box-follow-us">
+                <h2>Follow Us</h2>
+                <div class="social-network">
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-instagram"></a>
+                    <a href="#" class="fa-brands fa-x-twitter"></a>
+                    <a href="#" class="fa fa-youtube"></a>
+                </div>
+            </div>
+        </div>
+        <div class="group-2">
+            <small>&copy; 2023 <b>Proyecto Reno</b> - Todos los Derechos Reservados.</small>
+        </div>
     </footer>
+    <script src="./main.js" defer></script>
 </body>    
 </html>
